@@ -1,0 +1,495 @@
+@import url("./reset.css");
+
+body {
+  background-color: #ffffec; /* 閭梧勹濶ｲ繧定埋縺�げ繝ｬ繝ｼ縺ｫ螟画峩 */
+}
+.hidden {
+  display: none;
+}
+
+#hamburgermenu {
+  background-color: #fb8e00;
+  color: #fb8e00;
+  position: absolute;
+  top: 50px;
+  left: 10px; /* 右側から左側に変更 */
+  width: 20vw; /* 幅を30vwに設定 */
+  height: 30vh; /* 高さを60vhに設定 */
+  border-radius: 5px;
+  overflow-y: auto; /* 内容が多い場合にスクロール可能にする */
+}
+
+#hamburgermenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+}
+
+#hamburgermenu li {
+  padding: 20px;
+  border-bottom: 2px solid FFFFEC;
+  text-align: center;
+}
+
+#hamburgermenu li:last-child {
+  border-bottom: none;
+}
+
+#hamburgermenu a {
+  font-size: 20px;
+  color: #ffffec;
+  font-family: "Zen Kaku Gothic New", serif;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
+#hamburgermenu a:hover {
+  text-decoration: underline;
+}
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.profile {
+  background-color: #ffffec;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 8%;
+}
+.menubuttonicon {
+  width: 100px;
+  height: 100px;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menubuttonicon .bar {
+  width: 35px;
+  height: 5px;
+  background-color: #fb8e00; /* 線の色を変更 */
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.header_left {
+  display: none;
+}
+.titlename {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 15vw;
+}
+.haru {
+  font-family: "Lexend Giga", serif;
+  font-size: 50px;
+  font-weight: 800;
+  font-style: normal;
+  color: #fb8e00;
+}
+.fujihara {
+  font-family: "Lexend Giga", serif;
+  font-size: 50px;
+  font-weight: 800;
+  font-style: normal;
+  color: #fb8e00;
+}
+.header_right {
+  display: flex;
+  gap: 65px;
+  justify-content: space-around;
+  justify-content: center; /* 豌ｴ蟷ｳ譁ｹ蜷代�荳ｭ螟ｮ謠�∴ */
+  align-items: center;
+}
+.snsicon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.picturepart {
+  display: flex; /* flexbox繧剃ｽｿ逕ｨ */
+  justify-content: center; /* 豌ｴ蟷ｳ譁ｹ蜷代�荳ｭ螟ｮ謠�∴ */
+  align-items: center;
+  margin-top: 170px;
+}
+.toppicture {
+  width: 90%; /* 隕ｪ隕∫ｴ�縺ｮ蟷��80%縺ｫ險ｭ螳� */
+  max-width: 100%; /* 逕ｻ蜒上′隕ｪ隕∫ｴ�繧医ｊ螟ｧ縺阪￥縺ｪ繧峨↑縺�ｈ縺�↓險ｭ螳� */
+  height: 600px; /*
+  object-fit: cover; /* 逕ｻ蜒上′讌募�縺ｮ譫�縺ｫ蜿弱∪繧九ｈ縺�↓隱ｿ謨ｴ */
+  border-radius: 900px;
+}
+.information a:hover {
+  color: #25ceff;
+}
+.button_right {
+  padding: 10px 20px;
+  font-family: "Kaisei Decol", serif;
+  font-weight: 15px;
+  font-size: 20px;
+}
+h3 {
+  letter-spacing: 1px;
+}
+.sns {
+  display: flex;
+}
+.snsicon:hover img {
+  opacity: 0.6;
+}
+
+.portfolio_article {
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  place-content: center;
+  display: flex;
+  gap: 30px;
+}
+.portfolio_article > div {
+  width: 500px;
+  height: 300px;
+}
+.orange-box {
+  border-radius: 30px;
+  background-color: #fb8e00;
+  padding: 20px;
+  text-align: center;
+}
+.blue-box {
+  border-radius: 30px;
+  background-color: #5189aa;
+  padding: 20px;
+  text-align: center;
+}
+.article-title {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 33px;
+  font-weight: 700;
+  color: #ffffec;
+}
+.article-sub {
+  font-size: 25px;
+  color: #ffffec;
+  font-family: "Zen Kaku Gothic New", serif;
+  text-decoration: underline;
+}
+.article-sub-small {
+  font-size: 20px;
+  color: #ffffec;
+  font-family: "Zen Kaku Gothic New", serif;
+  text-decoration: underline;
+}
+.article-link-long {
+  margin-top: 35px;
+}
+.article-link {
+  margin-top: 25px;
+}
+.article-sub:hover {
+  opacity: 0.5;
+}
+.article-sub-small:hover {
+  opacity: 0.5;
+}
+
+.title {
+  margin-top: 50px;
+  display: flex; /* 繝輔Ξ繝�け繧ｹ繝懊ャ繧ｯ繧ｹ縺ｫ險ｭ螳� */
+  justify-content: center; /* 豌ｴ蟷ｳ譁ｹ蜷代�荳ｭ螟ｮ謠�∴ */
+  align-items: center;
+  flex-direction: column;
+}
+
+.toptitle {
+  font-family: "Lexend Giga", serif;
+  font-size: 50px;
+  font-weight: 800;
+  font-style: normal;
+  color: #fb8e00;
+  display: flex; /* Flexbox繧呈怏蜉ｹ縺ｫ縺吶ｋ */
+  justify-content: center; /* 豌ｴ蟷ｳ譁ｹ蜷代↓荳ｭ螟ｮ謠�∴ */
+  align-items: center;
+}
+.selfintroduction {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3%;
+  margin: 0 5%;
+}
+.selfphotoimg {
+  padding-top: 60px;
+}
+.selfphoto {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px; /* 隗偵ｒ荳ｸ縺上☆繧� */
+  object-fit: cover;
+}
+.aboutme {
+  padding-left: 2%;
+}
+.namepart {
+  padding-left: 3%;
+}
+.fujiharahiragana {
+  font-size: 20px;
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: bold;
+}
+.fujiharakanji {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 50px;
+  color: #3f3f3f;
+}
+.myself {
+  padding-top: 2%;
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 20px;
+  width: 630px;
+}
+#menubuttonicon {
+  color: #fb8e00;
+  font-size: 40px;
+  background: none;
+  border: none;
+}
+
+.Container {
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Box-Container {
+  margin-top: 10px;
+  display: flex;
+  width: fit-content;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+
+.Box {
+  flex-shrink: 0;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+.Arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #fb8e00;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Arrow.left {
+  left: 0;
+}
+
+.Arrow.right {
+  right: 0;
+}
+
+.Hide {
+  display: none;
+}
+
+.outer {
+  padding-top: 50px;
+}
+.music-top {
+  display: flex;
+}
+.rightset_snsicon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.rightset_snsicon img:hover {
+  opacity: 0.5; /* 騾乗�蠎ｦ繧�50%縺ｫ險ｭ螳� */
+}
+.pentas_sns {
+  display: flex;
+  margin-left: auto;
+  margin-top: 20px;
+  gap: 20px;
+}
+.pentas_instagram {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.pentas_youtube {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.pentas_youtube img:hover {
+  opacity: 0.5; /* 騾乗�蠎ｦ繧�50%縺ｫ險ｭ螳� */
+}
+.pentas_instagram img:hover {
+  opacity: 0.5; /* 騾乗�蠎ｦ繧�50%縺ｫ險ｭ螳� */
+}
+
+.music {
+  margin-top: 3%;
+}
+.fullmusicbox {
+  width: 100%;
+  margin-top: 4%;
+  padding: 0 12% 0 12%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+}
+.musicbox1 {
+  display: flex; /* 隕ｪ隕∫ｴ�繧偵ヵ繝ｬ繝�け繧ｹ繧ｳ繝ｳ繝�リ縺ｫ */
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.musicbox2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.musicbox_orange {
+  width: 324px;
+  height: 436px;
+  border-radius: 30px;
+  background-color: #fb8e00;
+  display: flex; /* 隕ｪ隕∫ｴ�繧偵ヵ繝ｬ繝�け繧ｹ繧ｳ繝ｳ繝�リ縺ｫ */
+  flex-direction: column;
+  justify-content: center; /* 豌ｴ蟷ｳ譁ｹ蜷代↓荳ｭ螟ｮ謠�∴ */
+  align-items: center;
+}
+.musicbox_blue {
+  width: 324px;
+  height: 436px;
+  border-radius: 30px;
+  background-color: #5189aa;
+  display: flex; /* 隕ｪ隕∫ｴ�繧偵ヵ繝ｬ繝�け繧ｹ繧ｳ繝ｳ繝�リ縺ｫ */
+  flex-direction: column;
+  justify-content: center; /* 豌ｴ蟷ｳ譁ｹ蜷代↓荳ｭ螟ｮ謠�∴ */
+  align-items: center;
+}
+.backwhite {
+  width: 307px;
+  height: 213px;
+  border-radius: 10px;
+  background-color: #ffffec;
+  display: flex; /* 隕ｪ隕∫ｴ�繧偵ヵ繝ｬ繝�け繧ｹ繧ｳ繝ｳ繝�リ縺ｫ */
+  justify-content: center; /* 豌ｴ蟷ｳ譁ｹ蜷代↓荳ｭ螟ｮ謠�∴ */
+  align-items: center;
+}
+.backwhite_amaizukin {
+  width: 307px;
+  height: 213px;
+  border-radius: 10px;
+  background-color: #ffffec;
+  display: flex; /* 隕ｪ隕∫ｴ�繧偵ヵ繝ｬ繝�け繧ｹ繧ｳ繝ｳ繝�リ縺ｫ */
+  justify-content: center; /* 豌ｴ蟷ｳ譁ｹ蜷代↓荳ｭ螟ｮ謠�∴ */
+  align-items: center;
+  margin-top: 8px;
+}
+.musicpicture_itself {
+  padding-top: 5px;
+  border-radius: 10px;
+  width: 288px;
+  height: 198px;
+  object-fit: cover;
+}
+.musictitle {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 33px;
+  font-weight: 700;
+  color: #ffffec;
+}
+.musictitle_midium {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffec;
+}
+.musicexplain {
+  padding: 0px 22px;
+}
+.musicexplain_pentas {
+  padding: 0px 22px 40px 22px;
+}
+.musicsub {
+  font-size: 25px;
+  color: #ffffec;
+  font-family: "Zen Kaku Gothic New", serif;
+}
+.musicdetail {
+  font-size: 16px;
+  color: #ffffec;
+  font-family: "Zen Kaku Gothic New", serif;
+}
+.musicmidium {
+  padding-top: 5%;
+  font-size: 22px;
+  color: #ffffec;
+  font-family: "Zen Kaku Gothic New", serif;
+}
+.whitesquare {
+  width: 7px;
+  height: 61px;
+  margin-top: 5%;
+  background-color: #ffffec;
+}
+.favoriteartistpart {
+  display: flex;
+}
+.favoriteartist_sentence {
+  padding-left: 15%;
+}
+.fotter {
+  margin-top: 60px;
+  height: 60px;
+  background-color: #fb8e00;
+}
+.fottersentence {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: lighter;
+  font-style: normal;
+  color: #ffffec;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .selfintroduction {
+    flex-direction: column; /* 讓ｪ荳ｦ縺ｳ縺九ｉ邵ｦ荳ｦ縺ｳ縺ｫ螟画峩 */
+    align-items: center; /* 繧｢繧､繝�Β繧剃ｸｭ螟ｮ縺ｫ蟇�○繧� */
+  }
+}
